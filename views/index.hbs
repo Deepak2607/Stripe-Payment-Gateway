@@ -1,0 +1,44 @@
+
+{{#if error_message}}
+<br>
+<div class="alert alert-danger">
+{{error_message}}
+</div>
+{{/if}}
+
+{{#if success_message}}
+<br>
+<div class="alert alert-primary">
+{{success_message}}
+</div>
+{{/if}}
+
+<div class="container">
+    <br>
+    <div class="row">
+    <div class="col-md-2"></div>
+        
+    <div align="center" class="col-md-4">
+    <h1 style="font-family: 'Thasadith', sans-serif;">Web Development Ebook</h1><br>
+    <p style="font-family: 'Thasadith', sans-serif;font-size:25px"><span style="font-weight:bold">Web Development & beyond</span><br>-  by Kyle Prinsloo</p>
+    <form action="/charge" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_N8PMM0mj5KgVyEMi7LubEii4"
+        data-amount="2500"
+        data-name="WebD Ebook"
+        data-description="by Kyle Prinsloo"
+        data-image="https://i.pinimg.com/originals/1a/f5/9d/1af59dc35bded0c716f983f86370888e.jpg"
+        data-billingAddress="true"
+        data-shippingAddress="true">
+      </script>
+    </form>
+    </div>
+        
+    <div align="center" class="col-md-6">
+        <br>
+        <img height="400" width="300" style="box-shadow:1px 2px 2px 3px #484848" src="https://i.pinimg.com/originals/1a/f5/9d/1af59dc35bded0c716f983f86370888e.jpg">
+    </div>
+        
+    </div>
+</div>
